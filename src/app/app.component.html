@@ -1,0 +1,29 @@
+<md-sidenav-container>
+
+  <!-- sidenav -->
+  <md-sidenav #sidenav mode="side" opened="true">
+    <h5>Angular Demo</h5>
+    <md-nav-list>
+      <md-list-item>
+        <a md-line routerLink="/home">Home</a>
+      </md-list-item>
+      <md-list-item>
+        <a md-link routerLink="/articles">Articles</a>
+      </md-list-item>
+    </md-nav-list>
+  </md-sidenav>
+
+  <!-- header toolbar -->
+  <md-toolbar>
+    <div>
+      <button md-icon-button (click)="sidenav.toggle()">
+        <md-icon>menu</md-icon>
+      </button>
+    </div>
+  </md-toolbar>
+
+  <!-- content -->
+  <div class="">
+    <router-outlet></router-outlet>
+  </div>
+</md-sidenav-container>

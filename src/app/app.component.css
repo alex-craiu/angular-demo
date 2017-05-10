@@ -1,0 +1,11 @@
+/* sidenav */
+md-sidenav-container {
+    width: 100%;
+    height: 100%;
+}
+md-sidenav {
+    padding: 15px;
+}
+md-sidenav>h5 {
+    font-size: 120%;
+}
