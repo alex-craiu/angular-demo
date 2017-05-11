@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
+import { NavTitleModule } from 'angular-nav-title';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -20,6 +22,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     MaterialModule,
+    NavTitleModule,
     AppRoutingModule
   ],
   providers: [],
