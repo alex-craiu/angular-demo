@@ -1,32 +1,32 @@
-<md-sidenav-container>
+<mat-sidenav-container>
 
   <!-- sidenav -->
-  <md-sidenav #sidenav mode="side" opened="true">
+  <mat-sidenav #sidenav mode="side" opened="true">
     <h5>Angular Demo</h5>
-    <md-nav-list>
-      <md-list-item>
-        <a md-line routerLink="/home">Home</a>
-      </md-list-item>
-      <md-list-item>
+    <mat-nav-list>
+      <mat-list-item>
+        <a matLine routerLink="/home">Home</a>
+      </mat-list-item>
+      <mat-list-item>
         <a md-link routerLink="/articles">Articles</a>
-      </md-list-item>
-    </md-nav-list>
-  </md-sidenav>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
 
   <!-- header toolbar -->
-  <md-toolbar>
+  <mat-toolbar>
     <div>
-      <button md-icon-button (click)="sidenav.toggle()">
-        <md-icon>menu</md-icon>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
       </button>
     </div>
     
     <!-- breadcrumb -->
     <nav-title></nav-title>
-  </md-toolbar>
+  </mat-toolbar>
 
   <!-- content -->
   <div class="">
     <router-outlet></router-outlet>
   </div>
-</md-sidenav-container>
+</mat-sidenav-container>

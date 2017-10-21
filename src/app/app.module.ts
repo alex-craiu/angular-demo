@@ -1,11 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MaterialModule } from '@angular/material';
 import 'hammerjs';
+import {
+  MatSidenavModule,
+  MatToolbarModule,
+  MatListModule,
+  MatButtonModule,
+  MatIconModule
+} from '@angular/material';
 
 import { NavTitleModule } from 'angular-nav-title';
 
@@ -19,11 +23,14 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule,
-    HttpModule,
-    MaterialModule,
     NavTitleModule,
-    AppRoutingModule
+    AppRoutingModule,
+    // material
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
